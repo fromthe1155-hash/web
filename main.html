@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f7f3ee" />
+    <meta name="description" content="Тёплый шаг — тапочки, в которые хочется возвращаться." />
+    <title>Тёплый шаг — магазин тапочек</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+  <meta property="og:type" content="website">
+		<meta property="og:url" content="https://slippers-naeimxj2.manus.space/">
+		<meta property="og:title" content="Тёплый шаг — магазин тапочек">
+		<meta property="og:description" content="Тёплый шаг — тапочки, в которые хочется возвращаться.">
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="Тёплый шаг — магазин тапочек">
+		<meta name="twitter:description" content="Тёплый шаг — тапочки, в которые хочется возвращаться."><link rel="canonical" href="https://slippers-naeimxj2.manus.space/" /><link rel="manifest" href="/__manus/pwa/manifest.webmanifest" crossorigin="use-credentials" /></head>
+  <body>
+    <div class="announcement"><span>Бесплатная доставка от 4 500 ₽</span><span class="announcement-dot"></span><span>Подбор размера в чате</span></div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Тёплый шаг — на главную">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span></span>
+        <span class="brand-name">Тёплый <em>шаг</em></span>
+      </a>
+      <nav class="main-nav" aria-label="Основная навигация">
+        <a href="#catalog">Коллекция</a>
+        <a href="#about">О нас</a>
+        <a href="#delivery">Доставка</a>
+      </nav>
+      <button class="cart-button" id="open-cart" type="button" aria-label="Открыть корзину">
+        <span>Корзина</span><span class="cart-count" id="cart-count">0</span>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero section-shell">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span>Коллекция для дома</p>
+          <h1>Дом начинается<br />с первого <i>шага</i></h1>
+          <p class="hero-text">Тапочки, в которые хочется возвращаться. Мягкие материалы, продуманные формы и тот самый уют, который чувствуется сразу.</p>
+          <a class="primary-button" href="#catalog">Выбрать свою пару <span>↗</span></a>
+          <div class="hero-note"><span class="avatar-stack"><span>Т</span><span>М</span><span>А</span></span><span>Уже выбрали свой уют<br /><strong>1 200+ покупателей</strong></span></div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-image-wrap"><img src="/manus-storage/async-images/M6huJyEItY22ybDSxa1rpu/image-1.webp" alt="Кремовые тапочки на уютном ковре" /></div>
+          <div class="hero-stamp"><span class="stamp-star">✳</span><span>soft<br />inside</span></div>
+          <div class="hero-caption"><span>01</span><span>Тихие вечера<br />начинаются здесь</span></div>
+        </div>
+      </section>
+
+      <section class="trust-strip section-shell" id="about">
+        <div class="trust-item"><span class="trust-icon">✦</span><div><strong>Натуральные материалы</strong><span>Дышащая шерсть и хлопок</span></div></div>
+        <div class="trust-item"><span class="trust-icon">◌</span><div><strong>Комфорт с первого шага</strong><span>Мягкая посадка без привыкания</span></div></div>
+        <div class="trust-item"><span class="trust-icon">⌁</span><div><strong>Доставка от 2 дней</strong><span>Бережно упакуем и отправим</span></div></div>
+      </section>
+
+      <section class="catalog section-shell" id="catalog">
+        <div class="section-heading">
+          <div><p class="eyebrow"><span class="eyebrow-line"></span>Выбор редакции</p><h2>Найдите свою<br /><i>пару</i> для дома</h2></div>
+          <p class="section-intro">Небольшая коллекция, собранная с любовью к деталям. Каждая модель создана для своего настроения.</p>
+        </div>
+        <div class="category-tabs" role="tablist" aria-label="Категории тапочек">
+          <button class="category-tab active" data-filter="all" type="button">Все модели <span>04</span></button>
+          <button class="category-tab" data-filter="warm" type="button">Тёплые <span>02</span></button>
+          <button class="category-tab" data-filter="light" type="button">Лёгкие <span>02</span></button>
+        </div>
+        <div class="product-grid" id="product-grid"></div>
+      </section>
+
+      <section class="ritual section-shell">
+        <div class="ritual-card">
+          <div class="ritual-copy"><p class="eyebrow light"><span class="eyebrow-line"></span>Маленький домашний ритуал</p><h2>Снимите обувь.<br /><i>Выдохните.</i></h2><p>Иногда для хорошего вечера нужна только любимая пара тапочек, тёплый чай и немного времени для себя.</p><a href="#catalog" class="text-link light-link">Посмотреть коллекцию <span>→</span></a></div>
+          <div class="ritual-doodles" aria-hidden="true"><span>comfort</span><span>everyday</span><span>since 2024</span></div>
+        </div>
+      </section>
+
+      <section class="delivery section-shell" id="delivery">
+        <div class="delivery-copy"><p class="eyebrow"><span class="eyebrow-line"></span>Всё просто</p><h2>От заказа<br />до <i>дома</i></h2><p>Собираем каждую посылку вручную и отправляем в течение 1–2 рабочих дней.</p></div>
+        <div class="steps"><div class="step"><span>01</span><div><strong>Выбираете</strong><p>Модель и размер<br />в удобном каталоге</p></div></div><div class="step"><span>02</span><div><strong>Заказываете</strong><p>Оставляете заявку<br />через корзину</p></div></div><div class="step"><span>03</span><div><strong>Получаете</strong><p>Примеряете уют<br />у себя дома</p></div></div></div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><div class="footer-top"><a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true"><span></span><span></span></span><span class="brand-name">Тёплый <em>шаг</em></span></a><p>Тапочки, в которые<br />хочется возвращаться.</p><div class="footer-links"><a href="#catalog">Коллекция</a><a href="#delivery">Доставка</a><a href="mailto:hello@teplyshag.ru">hello@teplyshag.ru</a></div></div><div class="footer-bottom"><span>© 2024 Тёплый шаг</span><span>Сделано с заботой о ваших вечерах</span><span>Instagram&nbsp;&nbsp; Telegram</span></div></footer>
+
+    <div class="cart-overlay" id="cart-overlay" hidden></div>
+    <aside class="cart-drawer" id="cart-drawer" aria-label="Корзина" aria-hidden="true">
+      <div class="cart-header"><div><p class="eyebrow"><span class="eyebrow-line"></span>Ваш выбор</p><h2>Корзина <span id="drawer-count">(0)</span></h2></div><button class="close-button" id="close-cart" type="button" aria-label="Закрыть корзину">×</button></div>
+      <div class="cart-items" id="cart-items"></div>
+      <div class="cart-empty" id="cart-empty"><span>○</span><strong>Здесь пока тихо</strong><p>Добавьте пару, которая<br />подойдёт вашему дому.</p><a href="#catalog" class="text-link" id="empty-link">Перейти к коллекции <span>→</span></a></div>
+      <div class="cart-summary" id="cart-summary" hidden><div><span>Товары</span><strong id="cart-subtotal">0 ₽</strong></div><div><span>Доставка</span><strong id="cart-shipping">Рассчитаем после заявки</strong></div><div class="summary-total"><span>Итого</span><strong id="cart-total">0 ₽</strong></div><button class="primary-button checkout-button" type="button" id="checkout-button">Оформить заявку <span>↗</span></button><p class="cart-hint">Это демонстрационная корзина — оплата пока не подключена.</p></div>
+    </aside>
+    <div class="toast" id="toast" role="status" aria-live="polite">Пара добавлена в корзину</div>
+    <script src="/app.js"></script>
+  <script
+			defer
+			data-domain="manus.space"
+			src="https://plausible.io/js/script.file-downloads.hash.outbound-links.pageview-props.revenue.tagged-events.js"
+		></script>
+		<script>
+			window.plausible =
+				window.plausible ||
+				function () {
+					(window.plausible.q = window.plausible.q || []).push(arguments);
+				};
+			plausible('custom-pageview', {
+			  props: {
+    			domain: window.location.host
+  			}
+			})
+		</script><script defer nonce="9b597d3a-74ee-419a-936e-ac8b4902c06d" src="https://manus-analytics.com/script.js" data-website-id="f1cffca0-04d0-4516-91ee-9f310674f401"></script></body>
+</html>
